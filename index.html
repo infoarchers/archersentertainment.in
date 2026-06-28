@@ -3,14 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── TITLE & DESCRIPTION (controls Google snippet) ── -->
 <title>Archers Entertainment Solutions</title>
+<meta name="description" content="Event Management Company">
+
+<!-- ── CANONICAL URL ── -->
+<link rel="canonical" href="https://www.archersentertainment.in/">
+
+<!-- ── OPEN GRAPH ── -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Archers Entertainment Solutions">
+<meta property="og:description" content="Event Management Company">
+<meta property="og:url" content="https://www.archersentertainment.in/">
+<meta property="og:image" content="https://www.archersentertainment.in/archerslogo.jpg">
+<meta property="og:site_name" content="Archers Entertainment Solutions">
+
+<!-- ── TWITTER CARD ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Archers Entertainment Solutions">
+<meta name="twitter:description" content="Event Management Company">
+<meta name="twitter:image" content="https://www.archersentertainment.in/archerslogo.jpg">
+
+<!-- ── SCHEMA.ORG STRUCTURED DATA ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.archersentertainment.in/#website",
+      "url": "https://www.archersentertainment.in/",
+      "name": "Archers Entertainment Solutions",
+      "description": "Event Management Company"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.archersentertainment.in/#organization",
+      "name": "Archers Entertainment Solutions",
+      "url": "https://www.archersentertainment.in/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.archersentertainment.in/archerslogo.jpg",
+        "width": 512,
+        "height": 512
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-96953-55553",
+        "contactType": "customer service"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3rd Floor, 2/429, Vibhav Khand",
+        "addressLocality": "Gomti Nagar, Lucknow",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "226010",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://instagram.com/archers.entertainment"
+      ]
+    }
+  ]
+}
+</script>
 
 <!-- GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-<link rel="icon" href="archerslogo.jpg" type="image/jpeg" />
+
+<!-- FAVICON -->
+<link rel="icon" href="archerslogo.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="archerslogo.jpg">
 
 <!-- EMAILJS SDK -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -401,8 +468,7 @@ section p {
 }
 
 /* =========================================================
-   LAPTOP FIX — 769px to 1280px (scaled laptop viewports)
-   This covers laptops at 125%/150% Windows display scaling
+   LAPTOP FIX
 ========================================================= */
 
 @media (max-width: 1280px) and (min-width: 769px) {
@@ -667,7 +733,6 @@ section p {
     box-shadow: 0 15px 40px rgba(225, 6, 0, 0.25);
 }
 
-/* ===== SINGLE IMAGE CARD ===== */
 .event-card > img:only-of-type {
     width: 100%;
     height: 280px;
@@ -676,7 +741,6 @@ section p {
     aspect-ratio: 16 / 9;
 }
 
-/* ===== MULTI-IMAGE GRID CARD ===== */
 .event-card-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -695,12 +759,10 @@ section p {
     display: block;
 }
 
-/* ===== 2-COL IMAGE GRID ===== */
 .event-card-images.cols-2 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* ===== LARGE IMAGE + SIDE GRID ===== */
 .event-card-images.large-left {
     grid-template-columns: 2fr 1fr;
 }
@@ -801,12 +863,8 @@ section p {
 }
 
 @keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 /* =========================================================
@@ -890,7 +948,6 @@ section p {
     margin-bottom: var(--spacing-lg);
 }
 
-/* Milestone cards */
 .founder-milestones {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -926,7 +983,6 @@ section p {
     line-height: 1.35;
 }
 
-/* More milestones toggle */
 .more-milestones { 
     display: none; 
 }
@@ -954,7 +1010,6 @@ section p {
     color: var(--primary); 
 }
 
-/* Noteworthy contributions */
 .founder-contributions {
     background: var(--white);
     border-radius: var(--radius-lg);
@@ -1222,12 +1277,10 @@ footer {
         font-size: 0.85rem;
     }
     
-    /* Hide desktop social sidebar on mobile — replaced by bottom bar */
     .social-sidebar {
         display: none;
     }
 
-    /* Founder responsive */
     .founder-grid { grid-template-columns: 1fr; }
     .founder-photo { position: static; }
     .founder-photo img { width: 160px; height: 200px; margin: 0 auto; }
@@ -1245,7 +1298,6 @@ footer {
         --spacing-3xl: 44px;
     }
 
-    /* ── NAVBAR ── */
     .navbar {
         padding: 14px 16px;
     }
@@ -1254,7 +1306,6 @@ footer {
         font-size: 1.2rem;
     }
 
-    /* ── HERO — CARD-STACK LAYOUT ── */
     .hero {
         min-height: 85svh;
         padding: 0;
@@ -1263,7 +1314,6 @@ footer {
         overflow: hidden;
     }
 
-    /* Diagonal accent slash behind text */
     .hero::after {
         content: '';
         position: absolute;
@@ -1276,7 +1326,6 @@ footer {
         z-index: 1;
     }
 
-    /* Large decorative letter */
     .hero::before {
         content: 'A';
         position: absolute;
@@ -1305,7 +1354,6 @@ footer {
         to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* Pill label above headline */
     .hero-content::before {
         content: '✦ Event Management';
         display: inline-block;
@@ -1351,7 +1399,6 @@ footer {
         overflow: hidden;
     }
 
-    /* Shimmer effect on button */
     .hero-btn::after {
         content: '';
         position: absolute;
@@ -1377,18 +1424,15 @@ footer {
         justify-content: center;
     }
 
-    /* ── MOBILE BOTTOM SOCIAL BAR ── */
     .mobile-social-bar {
         display: flex !important;
     }
 
-    /* ── SECTION HEADINGS ── */
     section h2 {
         font-size: 1.9rem;
         letter-spacing: -1px;
     }
 
-    /* ── SERVICES — horizontal scroll on mobile ── */
     .service-grid {
         display: flex;
         flex-direction: row;
@@ -1414,7 +1458,6 @@ footer {
         scroll-snap-align: start;
     }
 
-    /* ── PORTFOLIO GRID ── */
     .event-grid {
         grid-template-columns: 1fr;
         gap: 14px;
@@ -1424,7 +1467,6 @@ footer {
         height: 200px;
     }
 
-    /* ── PORTFOLIO FILTERS — horizontal scroll ── */
     .portfolio-filters {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -1446,7 +1488,6 @@ footer {
         padding: 10px 18px;
     }
 
-    /* ── CONTACT ── */
     .contact-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-2xl);
@@ -1456,17 +1497,15 @@ footer {
         padding: var(--spacing-lg);
     }
 
-    /* ── FOOTER ── */
     footer {
         padding-bottom: 90px;
     }
 
-    /* ── FOUNDER MOBILE ── */
     .founder-milestones { grid-template-columns: 1fr; }
 }
 
 /* =========================================================
-   MOBILE BOTTOM SOCIAL BAR (hidden on desktop)
+   MOBILE BOTTOM SOCIAL BAR
 ========================================================= */
 
 .mobile-social-bar {
@@ -1524,7 +1563,6 @@ footer {
     transform: scale(0.93);
 }
 
-/* Scroll-indicator dots under hero on mobile */
 @media (max-width: 480px) {
     .hero-scroll-hint {
         display: flex !important;
@@ -1553,7 +1591,7 @@ footer {
 .hero-scroll-hint span:nth-child(3) { width: 8px; }
 
 /* =========================================================
-   LIGHTBOX — FIXED
+   LIGHTBOX
 ========================================================= */
 
 .lightbox {
@@ -1781,7 +1819,6 @@ footer {
                 <div class="event-info">
                     <span>Events</span>
                     <h3>KK Live & Dia Mirza , HUL Bollywood Carnival</h3>
-                    <p></p>
                 </div>
             </div>
             
@@ -1790,16 +1827,14 @@ footer {
                 <div class="event-info">
                     <span>Events</span>
                     <h3>Silk Route Band & Bombay Vikings at IIIT ALLAHABAD</h3>
-                    <p></p>
                 </div>
             </div>
             
             <div class="event-card reveal" data-category="mice events">
                 <img src="assetsgallery13.png" alt="Vice Chancellors Conference" loading="lazy">
                 <div class="event-info">
-                    <span>events</span>
+                    <span>Events</span>
                     <h3>Ghulam Ali & Jagjit Singh Live at IIIT Allahabad</h3>
-                    <p></p>
                 </div>
             </div>
 
@@ -1808,7 +1843,6 @@ footer {
                 <div class="event-info">
                     <span>Events</span>
                     <h3>Gracy Singh Ballet & Prince Dance Group at IIIT ALLAHABAD</h3>
-                    <p></p>
                 </div>
             </div>
             
@@ -1839,8 +1873,7 @@ footer {
             <div class="event-card reveal" data-category="csr">
                 <img src="3.jpeg" alt="CSR Initiative Event" loading="lazy">
                 <div class="event-info">
-                    <span>Csr Initiative
-                    </span>
+                    <span>CSR Initiative</span>
                     <h3>Swimming Championship</h3>
                 </div>
             </div>
@@ -1848,7 +1881,7 @@ footer {
             <div class="event-card reveal" data-category="csr">
                 <img src="4.jpeg" alt="CSR Initiative Event" loading="lazy">
                 <div class="event-info">
-                    <span>Csr Initiative</span>
+                    <span>CSR Initiative</span>
                     <h3>Boxing Championship</h3>
                 </div>
             </div>
@@ -1900,7 +1933,6 @@ footer {
 
                 <h4 class="founder-accomplishment-title">Key Accomplishment</h4>
 
-                <!-- Milestone cards -->
                 <div class="founder-milestones">
                     <div class="milestone-card">
                         <div class="milestone-year"></div>
@@ -1919,7 +1951,6 @@ footer {
                         <div class="milestone-title">Managed 'Idea Rocks India - 3' Live Concert by SHAAN, a multicity tour.</div>
                     </div>
 
-                    <!-- Hidden milestones shown on expand -->
                     <div class="more-milestones" id="moreMilestones">
                         <div class="milestone-card">
                             <div class="milestone-year"></div>
@@ -1952,7 +1983,6 @@ footer {
                     </button>
                 </div>
 
-                <!-- Noteworthy contributions -->
                 <div class="founder-contributions">
                     <h4>Noteworthy Contributions</h4>
                     <div class="contrib-item">
@@ -2064,29 +2094,17 @@ footer {
 <!-- JAVASCRIPT -->
 <script>
 
-/* EmailJS config — fill these in from your EmailJS dashboard.
-   Service ID / Template ID: Email Services / Email Templates tabs.
-   Public Key: Account > General tab.
-   IMPORTANT: In your EmailJS template, set the "To Email" field to either:
-      - singhanshu96502@gmail.com    (static recipient)
-      - {{to_email}}                 (dynamic recipient variable)
-   If you use {{to_email}}, the script sends the value from EMAILJS_TO_EMAIL. */
 const EMAILJS_PUBLIC_KEY = 'Zu160F5cgFkmlSqCo';
 const EMAILJS_SERVICE_ID = 'service_1s4pe8h';
 const EMAILJS_TEMPLATE_ID = 'template_h9xw108';
 const EMAILJS_TO_EMAIL = 'info.archers@gmail.com';
 
-// If you see "Template ID not found", replace EMAILJS_TEMPLATE_ID
-// with the exact ID from https://dashboard.emailjs.com/admin/templates
-// and ensure the template belongs to the same account/service.
 if (typeof emailjs === 'undefined') {
     console.error('EmailJS SDK is not loaded. Check the CDN script tag.');
 } else if (!EMAILJS_PUBLIC_KEY || EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
     console.error('EmailJS public key is missing or placeholder. Set EMAILJS_PUBLIC_KEY.');
 } else {
     emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-    console.log('EmailJS initialized with public key:', EMAILJS_PUBLIC_KEY);
-    console.log('Using EmailJS service:', EMAILJS_SERVICE_ID, 'template:', EMAILJS_TEMPLATE_ID);
 }
 
 /* Mobile menu toggle */
@@ -2159,7 +2177,7 @@ const showMoreBtn = document.getElementById('showMoreBtn');
 const moreMilestones = document.getElementById('moreMilestones');
 let expanded = false;
 
-    if (showMoreBtn) {
+if (showMoreBtn) {
     showMoreBtn.addEventListener('click', () => {
         expanded = !expanded;
         moreMilestones.classList.toggle('visible', expanded);
@@ -2203,12 +2221,6 @@ contactForm.addEventListener('submit', async function(e) {
         && EMAILJS_TEMPLATE_ID && EMAILJS_TEMPLATE_ID !== 'YOUR_TEMPLATE_ID';
 
     if (!emailjsConfigured) {
-        console.error('EmailJS configured:', {
-            emailjsLoaded: typeof emailjs !== 'undefined',
-            publicKey: EMAILJS_PUBLIC_KEY,
-            serviceId: EMAILJS_SERVICE_ID,
-            templateId: EMAILJS_TEMPLATE_ID
-        });
         showMessage('EmailJS is not configured correctly. Please check your service/template/public key.', 'error');
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send Message';
@@ -2231,11 +2243,9 @@ contactForm.addEventListener('submit', async function(e) {
         user_message: message,
         to_email: EMAILJS_TO_EMAIL
     };
-    console.log('EmailJS send payload:', payload);
 
     try {
         await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, payload);
-
         showMessage('Message sent successfully to ' + EMAILJS_TO_EMAIL + '.', 'success');
         contactForm.reset();
     } catch (error) {
